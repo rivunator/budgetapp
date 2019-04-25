@@ -1,16 +1,17 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import Icon from "react-native-vector-icons/Ionicons";
 
 import { directive } from "@babel/types";
 
 const BudgetCategoryItem = () => (
-  <View style={styles.item}>
-    <Text>Icon</Text>
+  <TouchableOpacity style={styles.item}>
+    <Icon name="ios-add-circle" size={30} color="#900" />
     <View style={styles.categoryAmmount}>
       <Text> Housing </Text>
       <Text> 330€ </Text>
     </View>
-  </View>
+  </TouchableOpacity>
 );
 
 const styles = StyleSheet.create({
